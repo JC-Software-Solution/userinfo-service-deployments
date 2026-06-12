@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userinfo-service
+spec:
+  template:
+    spec:
+      containers:
+        - name: userinfo-service
+          image: userinfo-service-app-image
+          
