@@ -14,4 +14,4 @@ patches:
 images:
 - name: userinfo-service-app-image
   newName: jovanie1795/userinfo-service
-  newTag: 0.0.0.000
+  newTag: 1781248178.5.1
