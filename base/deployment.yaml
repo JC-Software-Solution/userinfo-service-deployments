@@ -15,4 +15,9 @@ spec:
     spec:
       containers:
         - name: userinfo-service
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
           
