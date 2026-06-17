@@ -5,7 +5,7 @@ metadata:
     prometheus.io/path: /actuator/prometheus
     prometheus.io/port: '8080'
     prometheus.io/scrape: 'true'
-  name: userinfo-service
+  name: userinfo-service-svc
   labels:
     app: userinfo-service
 spec:
