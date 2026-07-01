@@ -15,6 +15,8 @@ spec:
               port: 8080
             initialDelaySeconds: 40
             periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 6
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
@@ -23,10 +25,10 @@ spec:
             periodSeconds: 40
             failureThreshold: 8
           resources:
-            limits:
-              memory: 256Mi
-              cpu: 100m
             requests:
-              memory: 256Mi
-              cpu: 100m
+              memory: 512Mi
+              cpu: 500m
+            limits:
+              memory: 512Mi
+              cpu: "1"
           
