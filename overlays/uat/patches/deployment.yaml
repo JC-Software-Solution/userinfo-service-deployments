@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: userinfo-service
 spec:
-  replicas: 2
   template:
     spec:
       containers:
